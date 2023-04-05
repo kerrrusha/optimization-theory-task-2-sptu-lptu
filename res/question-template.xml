@@ -1,0 +1,41 @@
+    <question type="ddwtos">
+        <name>
+            <text>{TASK_NAME}</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[<!--[CDATA[<p-->
+                Для системи з \( n={N}, m={M} \) скласти розклад з <strong>{SCHEDULE_TYPE}</strong>
+                <p></p>
+                Результуючий розклад: {CORRECT_TASK_SCHEDULE_SCHEMA}
+                <br>
+                Кількість альтернативних оптимумів: {CORRECT_ALT_ANSWERS_COUNT_ID}
+                <br>
+                <em>Перетягнути наступні елементи на відповідні їм місця.</em>
+                <br>
+                Позначення \( №i / t _i / d _i/ u _i\<br>\), де \( i \) - номер роботи, \( t_i \) - її тривалість,
+                \( d_i \) - її директивний строк, \( u_i \) - її вага.
+                <br>
+                <em>У випадку альтернативних оптимумів використовувати дужки "(" та ")". В дужках номери робіт упорядковувати за зростанням.</em><br>]]>
+            </text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>3</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <shuffleanswers>1</shuffleanswers>
+        <correctfeedback format="html">
+            <text>Ваш ответ верный.</text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text>Ваш ответ частично правильный.</text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text>Ваш ответ неправильный.</text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        {DRAGBOXES}
+    </question>
