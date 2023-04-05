@@ -27,15 +27,15 @@ public class TaskUtil {
                 .count();
     }
 
-    public static int getDuplicatingTimeValue(List<ScheduleElement> list) {
-        List<Integer> timeValues = list
+    public static Double getDuplicatingTDivideUValue(List<ScheduleElement> list) {
+        List<Double> tDivideUValues = list
                 .stream()
-                .map(ScheduleElement::getT)
+                .map(ScheduleElement::getTDivideU)
                 .collect(toList());
-        return timeValues
+        return tDivideUValues
                 .stream()
-                .filter(e -> getElementEntriesCount(timeValues, e) > 1)
-                .findFirst().orElse(Integer.MIN_VALUE);
+                .filter(e -> getElementEntriesCount(tDivideUValues, e) > 1)
+                .findFirst().orElse(Double.MIN_VALUE);
     }
 
 }

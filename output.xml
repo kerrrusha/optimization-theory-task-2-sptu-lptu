@@ -2,14 +2,14 @@
 <quiz>
     <question type="ddwtos">
         <name>
-            <text>Т2 LPT-F alt 1</text>
+            <text>Т2 SPTu-F alt 1</text>
         </name>
         <questiontext format="html">
             <text>
                 <![CDATA[<!--[CDATA[<p-->
-                Для системи з \( n=5, m=1 \) скласти розклад з <strong>максимальною сумарною тривалістю проходження</strong>
+                Для системи з \( n=5, m=1 \) скласти розклад з <strong>мінімальною сумарною зваженою тривалістю проходження</strong>
                 <p></p>
-                Результуючий розклад: [[5]] [[6]] [[4]] [[1]] [[3]] [[7]] [[2]] 
+                Результуючий розклад: [[7]] [[3]] [[4]] [[6]] [[5]] 
                 <br>
                 Кількість альтернативних оптимумів: [[8]]
                 <br>
@@ -49,35 +49,31 @@
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№1 / 8 / 49 / 2</text>
+      <text>№1 / 20 / 23 / 3</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№2 / 13 / 22 / 2</text>
+      <text>№2 / 8 / 42 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№3 / 19 / 36 / 1</text>
+      <text>№3 / 11 / 33 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№4 / 16 / 48 / 3</text>
+      <text>№4 / 19 / 48 / 2</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№5 / 8 / 48 / 2</text>
+      <text>№5 / 19 / 39 / 3</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>2</text>
+      <text>1</text>
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>17</text>
-      <group>2</group>
-    </dragbox>
-<dragbox>
-      <text>16</text>
+      <text>4</text>
       <group>2</group>
     </dragbox>
 <dragbox>
@@ -85,25 +81,29 @@
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>1</text>
+      <text>7</text>
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>10</text>
+      <text>24</text>
+      <group>2</group>
+    </dragbox>
+<dragbox>
+      <text>11</text>
       <group>2</group>
     </dragbox>
     </question>
 
     <question type="ddwtos">
         <name>
-            <text>Т2 SPT-W alt 2</text>
+            <text>Т2 LPTu-W alt 2</text>
         </name>
         <questiontext format="html">
             <text>
                 <![CDATA[<!--[CDATA[<p-->
-                Для системи з \( n=7, m=1 \) скласти розклад з <strong>мінімальним сумарним очікуванням</strong>
+                Для системи з \( n=5, m=1 \) скласти розклад з <strong>максимальним сумарним зваженим очікуванням</strong>
                 <p></p>
-                Результуючий розклад: [[1]] [[3]] [[4]] [[2]] [[6]] [[8]] [[7]] [[9]] [[5]] 
+                Результуючий розклад: [[5]] [[7]] [[3]] [[1]] [[4]] [[6]] [[2]] 
                 <br>
                 Кількість альтернативних оптимумів: [[10]]
                 <br>
@@ -143,43 +143,39 @@
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№1 / 8 / 38 / 2</text>
+      <text>№1 / 16 / 44 / 3</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№2 / 8 / 25 / 2</text>
+      <text>№2 / 10 / 40 / 2</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№3 / 20 / 42 / 3</text>
+      <text>№3 / 15 / 25 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№4 / 11 / 27 / 3</text>
+      <text>№4 / 15 / 37 / 3</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№5 / 16 / 36 / 3</text>
+      <text>№5 / 8 / 42 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№6 / 14 / 43 / 3</text>
-      <group>1</group>
+      <text>23</text>
+      <group>2</group>
     </dragbox>
 <dragbox>
-      <text>№7 / 19 / 45 / 3</text>
-      <group>1</group>
+      <text>5</text>
+      <group>2</group>
     </dragbox>
 <dragbox>
       <text>2</text>
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>22</text>
-      <group>2</group>
-    </dragbox>
-<dragbox>
-      <text>9</text>
+      <text>12</text>
       <group>2</group>
     </dragbox>
 <dragbox>
@@ -187,123 +183,21 @@
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>14</text>
-      <group>2</group>
-    </dragbox>
-    </question>
-
-    <question type="ddwtos">
-        <name>
-            <text>Т2 SPT-L alt 3</text>
-        </name>
-        <questiontext format="html">
-            <text>
-                <![CDATA[<!--[CDATA[<p-->
-                Для системи з \( n=7, m=1 \) скласти розклад з <strong>мінімальним сумарним часовим зміщенням</strong>
-                <p></p>
-                Результуючий розклад: [[4]] [[8]] [[1]] [[7]] [[9]] [[2]] [[3]] [[5]] [[6]] 
-                <br>
-                Кількість альтернативних оптимумів: [[13]]
-                <br>
-                <em>Перетягнути наступні елементи на відповідні їм місця.</em>
-                <br>
-                Позначення \( №i / t _i / d _i/ u _i\<br>\), де \( i \) - номер роботи, \( t_i \) - її тривалість,
-                \( d_i \) - її директивний строк, \( u_i \) - її вага.
-                <br>
-                <em>У випадку альтернативних оптимумів використовувати дужки "(" та ")". В дужках номери робіт упорядковувати за зростанням.</em><br>]]>
-            </text>
-        </questiontext>
-        <generalfeedback format="html">
-            <text></text>
-        </generalfeedback>
-        <defaultgrade>3</defaultgrade>
-        <penalty>0.3333333</penalty>
-        <hidden>0</hidden>
-        <idnumber></idnumber>
-        <shuffleanswers>1</shuffleanswers>
-        <correctfeedback format="html">
-            <text>Ваш ответ верный.</text>
-        </correctfeedback>
-        <partiallycorrectfeedback format="html">
-            <text>Ваш ответ частично правильный.</text>
-        </partiallycorrectfeedback>
-        <incorrectfeedback format="html">
-            <text>Ваш ответ неправильный.</text>
-        </incorrectfeedback>
-        <shownumcorrect/>
-        
-<dragbox>
-      <text>(</text>
-      <group>1</group>
-    </dragbox>
-<dragbox>
-      <text>)</text>
-      <group>1</group>
-    </dragbox>
-<dragbox>
-      <text>№1 / 15 / 39 / 1</text>
-      <group>1</group>
-    </dragbox>
-<dragbox>
-      <text>№2 / 5 / 32 / 1</text>
-      <group>1</group>
-    </dragbox>
-<dragbox>
-      <text>№3 / 17 / 32 / 2</text>
-      <group>1</group>
-    </dragbox>
-<dragbox>
-      <text>№4 / 18 / 32 / 2</text>
-      <group>1</group>
-    </dragbox>
-<dragbox>
-      <text>№5 / 12 / 37 / 1</text>
-      <group>1</group>
-    </dragbox>
-<dragbox>
-      <text>№6 / 11 / 42 / 2</text>
-      <group>1</group>
-    </dragbox>
-<dragbox>
-      <text>№7 / 12 / 45 / 2</text>
-      <group>1</group>
-    </dragbox>
-<dragbox>
-      <text>9</text>
-      <group>2</group>
-    </dragbox>
-<dragbox>
       <text>10</text>
       <group>2</group>
     </dragbox>
-<dragbox>
-      <text>22</text>
-      <group>2</group>
-    </dragbox>
-<dragbox>
-      <text>2</text>
-      <group>2</group>
-    </dragbox>
-<dragbox>
-      <text>23</text>
-      <group>2</group>
-    </dragbox>
-<dragbox>
-      <text>1</text>
-      <group>2</group>
-    </dragbox>
     </question>
 
     <question type="ddwtos">
         <name>
-            <text>Т2 SPT-T alt 4</text>
+            <text>Т2 LPTu-T alt 3</text>
         </name>
         <questiontext format="html">
             <text>
                 <![CDATA[<!--[CDATA[<p-->
-                Для системи з \( n=7, m=1 \) скласти розклад з <strong>мінімальним сумарним часом закінчення</strong>
+                Для системи з \( n=7, m=1 \) скласти розклад з <strong>максимальним сумарним зваженим часом закінчення</strong>
                 <p></p>
-                Результуючий розклад: [[7]] [[6]] [[5]] [[9]] [[1]] [[3]] [[8]] [[2]] [[4]] 
+                Результуючий розклад: [[4]] [[5]] [[6]] [[8]] [[7]] [[3]] [[9]] 
                 <br>
                 Кількість альтернативних оптимумів: [[15]]
                 <br>
@@ -343,71 +237,71 @@
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№1 / 16 / 36 / 1</text>
+      <text>№1 / 17 / 25 / 3</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№2 / 19 / 26 / 1</text>
+      <text>№2 / 17 / 25 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№3 / 10 / 48 / 1</text>
+      <text>№3 / 14 / 44 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№4 / 7 / 35 / 2</text>
+      <text>№4 / 13 / 25 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№5 / 5 / 45 / 1</text>
+      <text>№5 / 8 / 38 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№6 / 16 / 46 / 3</text>
+      <text>№6 / 20 / 33 / 2</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№7 / 13 / 27 / 3</text>
+      <text>№7 / 11 / 37 / 3</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>6</text>
+      <text>14</text>
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>17</text>
+      <text>3</text>
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>21</text>
+      <text>12</text>
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>24</text>
+      <text>7</text>
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>8</text>
+      <text>11</text>
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>2</text>
+      <text>1</text>
       <group>2</group>
     </dragbox>
     </question>
 
     <question type="ddwtos">
         <name>
-            <text>Т2 LPT-T alt 5</text>
+            <text>Т2 LPTu-F alt 4</text>
         </name>
         <questiontext format="html">
             <text>
                 <![CDATA[<!--[CDATA[<p-->
-                Для системи з \( n=6, m=1 \) скласти розклад з <strong>максимальним сумарним часом закінчення</strong>
+                Для системи з \( n=7, m=1 \) скласти розклад з <strong>максимальною сумарною зваженою тривалістю проходження</strong>
                 <p></p>
-                Результуючий розклад: [[3]] [[6]] [[1]] [[4]] [[7]] [[2]] [[8]] [[5]] 
+                Результуючий розклад: [[4]] [[5]] [[6]] [[9]] [[7]] [[8]] [[3]] 
                 <br>
-                Кількість альтернативних оптимумів: [[10]]
+                Кількість альтернативних оптимумів: [[15]]
                 <br>
                 <em>Перетягнути наступні елементи на відповідні їм місця.</em>
                 <br>
@@ -445,31 +339,35 @@
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№1 / 19 / 20 / 2</text>
+      <text>№1 / 6 / 32 / 3</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№2 / 14 / 49 / 2</text>
+      <text>№2 / 20 / 20 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№3 / 5 / 28 / 1</text>
+      <text>№3 / 16 / 41 / 1</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№4 / 18 / 43 / 2</text>
+      <text>№4 / 13 / 47 / 2</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№5 / 14 / 35 / 1</text>
+      <text>№5 / 6 / 21 / 2</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>№6 / 11 / 24 / 1</text>
+      <text>№6 / 8 / 44 / 3</text>
       <group>1</group>
     </dragbox>
 <dragbox>
-      <text>8</text>
+      <text>№7 / 12 / 42 / 3</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>21</text>
       <group>2</group>
     </dragbox>
 <dragbox>
@@ -477,11 +375,105 @@
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>6</text>
+      <text>17</text>
       <group>2</group>
     </dragbox>
 <dragbox>
-      <text>16</text>
+      <text>3</text>
+      <group>2</group>
+    </dragbox>
+<dragbox>
+      <text>18</text>
+      <group>2</group>
+    </dragbox>
+<dragbox>
+      <text>1</text>
+      <group>2</group>
+    </dragbox>
+    </question>
+
+    <question type="ddwtos">
+        <name>
+            <text>Т2 LPTu-T alt 5</text>
+        </name>
+        <questiontext format="html">
+            <text>
+                <![CDATA[<!--[CDATA[<p-->
+                Для системи з \( n=7, m=1 \) скласти розклад з <strong>максимальним сумарним зваженим часом закінчення</strong>
+                <p></p>
+                Результуючий розклад: [[4]] [[5]] [[9]] [[3]] [[8]] [[7]] [[6]] 
+                <br>
+                Кількість альтернативних оптимумів: [[14]]
+                <br>
+                <em>Перетягнути наступні елементи на відповідні їм місця.</em>
+                <br>
+                Позначення \( №i / t _i / d _i/ u _i\<br>\), де \( i \) - номер роботи, \( t_i \) - її тривалість,
+                \( d_i \) - її директивний строк, \( u_i \) - її вага.
+                <br>
+                <em>У випадку альтернативних оптимумів використовувати дужки "(" та ")". В дужках номери робіт упорядковувати за зростанням.</em><br>]]>
+            </text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>3</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <shuffleanswers>1</shuffleanswers>
+        <correctfeedback format="html">
+            <text>Ваш ответ верный.</text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text>Ваш ответ частично правильный.</text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text>Ваш ответ неправильный.</text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        
+<dragbox>
+      <text>(</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>)</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>№1 / 7 / 44 / 1</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>№2 / 13 / 43 / 1</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>№3 / 20 / 21 / 2</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>№4 / 7 / 41 / 3</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>№5 / 10 / 46 / 3</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>№6 / 16 / 36 / 3</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>№7 / 19 / 28 / 2</text>
+      <group>1</group>
+    </dragbox>
+<dragbox>
+      <text>21</text>
+      <group>2</group>
+    </dragbox>
+<dragbox>
+      <text>6</text>
       <group>2</group>
     </dragbox>
 <dragbox>
@@ -490,6 +482,10 @@
     </dragbox>
 <dragbox>
       <text>10</text>
+      <group>2</group>
+    </dragbox>
+<dragbox>
+      <text>1</text>
       <group>2</group>
     </dragbox>
     </question>

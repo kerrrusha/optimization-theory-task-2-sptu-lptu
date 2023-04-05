@@ -12,6 +12,10 @@ public class ScheduleElement {
     private final int d;
     private final int u;
 
+    public double getTDivideU() {
+        return ((double) t) / ((double) u);
+    }
+
     @Override
     public String toString() {
         return "(" +

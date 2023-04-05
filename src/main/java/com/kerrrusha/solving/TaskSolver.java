@@ -21,7 +21,7 @@ public class TaskSolver {
     private List<ScheduleElement> solved;
 
     public TaskAnswer solve() {
-        return new TaskAnswer(getSolvedSchedule(),  getAltAnswersCount());
+        return new TaskAnswer(getSolvedSchedule(), getAltAnswersCount());
     }
 
     public List<ScheduleElement> getSolvedSchedule() {
@@ -31,12 +31,12 @@ public class TaskSolver {
         if (task.getTaskCondition().getScheduleType().getType() == MAX) {
             solved = task.getTaskCondition().getInputSchedule().stream()
                     .sorted(Comparator.comparing(ScheduleElement::getI))
-                    .sorted(Comparator.comparing(ScheduleElement::getT).reversed())
+                    .sorted(Comparator.comparing(ScheduleElement::getTDivideU).reversed())
                     .collect(toList());
         } else {
             solved = task.getTaskCondition().getInputSchedule().stream()
                     .sorted(Comparator.comparing(ScheduleElement::getI))
-                    .sorted(Comparator.comparing(ScheduleElement::getT))
+                    .sorted(Comparator.comparing(ScheduleElement::getTDivideU))
                     .collect(toList());
         }
         return solved;
@@ -44,13 +44,13 @@ public class TaskSolver {
 
     public int getAltAnswersCount() {
         solveIfNotSolved();
-        Map<Integer, Integer> timeValueEntriesToCountMap = getUniqueTimeValues()
+        Map<Double, Integer> tDivideUValueEntriesToCountMap = getUniqueTDivideUValues()
                 .stream()
-                .collect(toMap(t -> t, this::getEntriesCountForTime));
-        int elementsThatCauseAltAnswersCount = timeValueEntriesToCountMap
+                .collect(toMap(tDivideU -> tDivideU, this::getEntriesCountForTDivideU));
+        int elementsThatCauseAltAnswersCount = tDivideUValueEntriesToCountMap
                 .keySet().stream()
-                .filter(t -> timeValueEntriesToCountMap.get(t) > 1)
-                .map(timeValueEntriesToCountMap::get)
+                .filter(tDivideU -> tDivideUValueEntriesToCountMap.get(tDivideU) > 1)
+                .map(tDivideUValueEntriesToCountMap::get)
                 .mapToInt(Integer::valueOf)
                 .sum();
         return factorial(elementsThatCauseAltAnswersCount);
@@ -62,15 +62,15 @@ public class TaskSolver {
         }
     }
 
-    private Integer getEntriesCountForTime(Integer t) {
+    private Integer getEntriesCountForTDivideU(Double tDivideU) {
         return Math.toIntExact(solved.stream()
-                .filter(e -> e.getT() == t)
+                .filter(e -> e.getTDivideU() == tDivideU)
                 .count());
     }
 
-    private Set<Integer> getUniqueTimeValues() {
+    private Set<Double> getUniqueTDivideUValues() {
         return solved.stream()
-                .map(ScheduleElement::getT)
+                .map(ScheduleElement::getTDivideU)
                 .collect(toSet());
     }
 

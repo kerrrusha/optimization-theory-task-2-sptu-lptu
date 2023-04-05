@@ -20,8 +20,8 @@ public class TaskNameGeneratorUtil {
 
     private static String decideSptOrLpt(ScheduleType scheduleType) {
         return scheduleType.getType().equals(MIN)
-                ? "SPT"
-                : "LPT";
+                ? "SPTu"
+                : "LPTu";
     }
 
 }

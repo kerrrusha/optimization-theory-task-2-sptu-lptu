@@ -9,7 +9,7 @@ import com.kerrrusha.util.FileWriterUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.kerrrusha.util.TaskUtil.getDuplicatingTimeValue;
+import static com.kerrrusha.util.TaskUtil.getDuplicatingTDivideUValue;
 
 public class TaskToMoodleXmlConverter {
 
@@ -122,19 +122,19 @@ public class TaskToMoodleXmlConverter {
     }
 
     private List<String> getCorrectTaskSchedule() {
-        int duplicatingTimeValue = getDuplicatingTimeValue(task.getTaskAnswer().getSchedule());
+        double duplicatingTDivideUValue = getDuplicatingTDivideUValue(task.getTaskAnswer().getSchedule());
         List<String> result = new ArrayList<>();
 
         List<ScheduleElement> scheduleElements = task.getTaskAnswer().getSchedule();
         for (int i = 0; i < scheduleElements.size(); i++) {
             ScheduleElement scheduleElement = scheduleElements.get(i);
-            if (i == 0 && scheduleElement.getT() == duplicatingTimeValue
-                    || scheduleElement.getT() == duplicatingTimeValue && scheduleElements.get(i - 1).getT() != duplicatingTimeValue) {
+            if (i == 0 && scheduleElement.getTDivideU() == duplicatingTDivideUValue
+                    || scheduleElement.getTDivideU() == duplicatingTDivideUValue && scheduleElements.get(i - 1).getTDivideU() != duplicatingTDivideUValue) {
                 result.add("(");
             }
             result.add(scheduleElement.toShortString());
-            if (i == scheduleElements.size() - 1 && scheduleElement.getT() == duplicatingTimeValue
-                    || scheduleElement.getT() == duplicatingTimeValue && scheduleElements.get(i + 1).getT() != duplicatingTimeValue) {
+            if (i == scheduleElements.size() - 1 && scheduleElement.getTDivideU() == duplicatingTDivideUValue
+                    || scheduleElement.getTDivideU() == duplicatingTDivideUValue && scheduleElements.get(i + 1).getTDivideU() != duplicatingTDivideUValue) {
                 result.add(")");
             }
         }
